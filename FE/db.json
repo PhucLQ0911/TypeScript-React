@@ -1,0 +1,57 @@
+{
+	"trips": [
+		{
+			"id": "1",
+			"toStationId": "2",
+			"startTime": "2024-27-03",
+			"startHours": 10,
+			"seats": 16,
+			"price": "250000",
+			"busHouseId": "1"
+		},
+		{
+			"id": "2",
+			"toStationId": "3",
+			"startTime": "2024-27-03",
+			"startHours": 10,
+			"seats": 16,
+			"price": "250000",
+			"busHouseId": "1"
+		},
+		{
+			"id": "3",
+			"toStationId": "1",
+			"startTime": "2024-27-03",
+			"startHours": 10,
+			"seats": 16,
+			"price": "250000",
+			"busHouseId": "1"
+		}
+	],
+	"stations": [
+		{
+			"id": "1",
+			"name": "My Dinh",
+			"province": "Ha Noi"
+		},
+		{
+			"id": "2",
+			"name": "Da Nang",
+			"province": "Da Nang"
+		},
+		{
+			"id": "3",
+			"name": "Hue",
+			"province": "Thua Thien Hue"
+		}
+	],
+	"busHouses": [
+		{
+			"id": "1",
+			"name": "Ha Son Hai Van",
+			"address": "BX My Dinh",
+			"phone": "092838848"
+		}
+	],
+	"users": []
+}

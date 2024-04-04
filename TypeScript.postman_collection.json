@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "a3700373-26ac-4b42-893c-49824110227a",
+		"name": "TypeScript",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31403266"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"admin\",\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"confirmPassword\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/auth/signup",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/auth/signin",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Station",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/stations",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"stations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/stations/660e0288f7fd6dcdf37b7a4e",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"stations",
+								"660e0288f7fd6dcdf37b7a4e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nha Trang\",\r\n    \"province\": \"Khanh Hoa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/stations",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"stations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sapa\",\r\n    \"province\": \"Lao Cai\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/stations/660e0288f7fd6dcdf37b7a4e",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"stations",
+								"660e0288f7fd6dcdf37b7a4e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/stations/660e0288f7fd6dcdf37b7a4e",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"stations",
+								"660e0288f7fd6dcdf37b7a4e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BusHouse",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/bushouse",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bushouse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/bushouse/660e0de15ffbaa1a64a5ba11",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bushouse",
+								"660e0de15ffbaa1a64a5ba11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sapa Express\",\r\n    \"address\": \"70 Nguyễn Hữu Huân, Hoàn Kiếm, Hà Nội\",\r\n    \"phone\": \"0984 890 055\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/bushouse",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bushouse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"address\": \"70 Nguyễn Hữu Huân, Hoàn Kiếm, Hà Nội\",\r\n    \"phone\": \"0984 890 055\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/bushouse/660e0de15ffbaa1a64a5ba11",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bushouse",
+								"660e0de15ffbaa1a64a5ba11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/bushouse/660e0de15ffbaa1a64a5ba11",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"bushouse",
+								"660e0de15ffbaa1a64a5ba11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trip",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fromStationId\": \"660e059af7fd6dcdf37b7a62\",\r\n    \"toStationId\": \"660e061cf7fd6dcdf37b7a6f\",\r\n    \"startTime\": \"06/04/2024\",\r\n    \"startHours\": \"17:30\",\r\n    \"seats\": 10,\r\n    \"price\": 100000,\r\n    \"busHouseId\": \"660e0db75ffbaa1a64a5ba0e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/trips",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"trips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/trips?fromStation=Ha Noi&toStation=Thai Binh&startTime=2024-04-06",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"trips"
+							],
+							"query": [
+								{
+									"key": "fromStation",
+									"value": "Ha Noi"
+								},
+								{
+									"key": "toStation",
+									"value": "Thai Binh"
+								},
+								{
+									"key": "startTime",
+									"value": "2024-04-06"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/trips/admin",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"trips",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost:8080/api/v1",
+			"type": "string"
+		}
+	]
+}
