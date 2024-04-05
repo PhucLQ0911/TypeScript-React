@@ -52,7 +52,6 @@ function SearchDetail(props: {
 										id="fromStation"
 										className="mt-1.5 w-full text-gray-700"
 									>
-										<option value={1}>Chọn điểm đi</option>
 										{props.provinces?.map((province, index: number) => (
 											<option key={index} value={province}>
 												{province}
@@ -78,7 +77,6 @@ function SearchDetail(props: {
 										id="toStation"
 										className="mt-1.5 w-full text-gray-700"
 									>
-										<option>Chọn điểm đến</option>
 										{props.provinces?.map((province, index: number) => (
 											<option key={index} value={province}>
 												{province}

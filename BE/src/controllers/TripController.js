@@ -4,6 +4,17 @@ import Station from "../models/station";
 
 export const getAllTrips = async (req, res) => {
    try {
+
+      if (!req.query.fromStation) {
+         return res.status(400).json({ message: "Please choose from station." })
+      }
+      if (!req.query.toStation) {
+         return res.status(400).json({ message: "Please choose to station." })
+      }
+      if (!req.query.startTime) {
+         return res.status(400).json({ message: "Please choose start time." })
+      }
+
       const current = new Date();
       const dateStart = new Date(req.query.startTime);
 

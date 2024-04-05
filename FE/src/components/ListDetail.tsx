@@ -18,7 +18,10 @@ function ListDetail(props: {
 
 				<div className="content-detail w-full">
 					{props.trips?.map((trip, index) => (
-						<Detail key={index} trip={trip} />
+						<div>
+							<Detail key={index} trip={trip} />
+							<div className="mt-3"></div>
+						</div>
 					))}
 				</div>
 			</div>
