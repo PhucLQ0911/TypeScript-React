@@ -17,12 +17,16 @@ function ListDetail(props: {
 				<Sort />
 
 				<div className="content-detail w-full">
-					{props.trips?.map((trip, index) => (
-						<div>
-							<Detail key={index} trip={trip} />
-							<div className="mt-3"></div>
-						</div>
-					))}
+					{props.trips.length > 0 ? (
+						props.trips?.map((trip, index) => (
+							<div key={index}>
+								<Detail trip={trip} />
+								<div className="mt-3"></div>
+							</div>
+						))
+					) : (
+						<h1>Không có chuyến xe nào</h1>
+					)}
 				</div>
 			</div>
 		</div>

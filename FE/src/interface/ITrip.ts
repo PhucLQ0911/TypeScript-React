@@ -1,4 +1,5 @@
 export interface ITrip {
+	_id: string;
 	busHouseAddress: string;
 	busHouseName: string;
 	busHousePhone: string;
@@ -7,7 +8,10 @@ export interface ITrip {
 	price: number;
 	seats: number;
 	startHours: string;
-	startTime: Date;
+	startTime: Date | string;
 	toStationName: string;
 	toStationProvince: string;
+	toStationId?: string;
+	fromStationId?: string;
+	busHouseId?: string;
 }

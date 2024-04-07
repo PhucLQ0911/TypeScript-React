@@ -1,26 +1,37 @@
+import { Link } from 'react-router-dom';
+
 function LeftMenuComponent() {
 	return (
 		<div className="w-64 min-h-screen bg-gray-800 text-white">
 			<ul className="space-y-2 p-4">
 				<li>
-					<a href="#" className="block hover:bg-gray-700 px-2 py-1 rounded">
+					<Link to="/admin" className="block hover:bg-gray-700 px-2 py-1 rounded">
 						Dashboard
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a href="#" className="block hover:bg-gray-700 px-2 py-1 rounded">
+					<Link
+						to="trips/history"
+						className="block hover:bg-gray-700 px-2 py-1 rounded"
+					>
 						Lịch sử chuyến xe
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a href="#" className="block hover:bg-gray-700 px-2 py-1 rounded">
+					<Link
+						to="trips"
+						className="block hover:bg-gray-700 px-2 py-1 rounded"
+					>
 						Chuyến xe
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a href="#" className="block hover:bg-gray-700 px-2 py-1 rounded">
+					<Link
+						to="bushose"
+						className="block hover:bg-gray-700 px-2 py-1 rounded"
+					>
 						Nhà xe
-					</a>
+					</Link>
 				</li>
 			</ul>
 		</div>
